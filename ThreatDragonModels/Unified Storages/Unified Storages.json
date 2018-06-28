@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "Unified Storages",
+    "owner": "Owner01",
+    "description": "Threat modeling methodology for thesis"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Diagram01",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Supervisor01"
+  }
+}
