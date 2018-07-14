@@ -277,40 +277,6 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "35d37293-e816-491e-b329-3e45be8743d8"
-              },
-              "target": {
-                "id": "a3f770e8-9f25-4e96-90a0-692dccf5ee5d"
-              },
-              "vertices": [],
-              "id": "fd2e1490-59bf-4d52-ad82-4c5d40db6117",
-              "labels": [
-                {
-                  "position": 0.5,
-                  "attrs": {
-                    "text": {
-                      "text": "Access to resources",
-                      "font-weight": "400",
-                      "font-size": "small"
-                    }
-                  }
-                }
-              ],
-              "z": 12,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
-                },
-                ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Flow",
-              "smooth": true,
-              "source": {
                 "id": "a3f770e8-9f25-4e96-90a0-692dccf5ee5d"
               },
               "target": {
@@ -641,10 +607,13 @@
               "id": "ff6a160e-59a3-44c0-baeb-de3ae1414554",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.45561359120453593,
+                    "offset": -11.072997876210138
+                  },
                   "attrs": {
                     "text": {
-                      "text": "flow 20",
+                      "text": "Access to resources",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -1004,6 +973,40 @@
               "id": "85f3c8e9-94a9-447e-9942-30d60165dcf3",
               "z": 32,
               "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "35d37293-e816-491e-b329-3e45be8743d8"
+              },
+              "target": {
+                "id": "a3f770e8-9f25-4e96-90a0-692dccf5ee5d"
+              },
+              "vertices": [],
+              "id": "d45d837a-bf8d-43b1-896d-6eead5ca8d84",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Access to resources",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 33,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
