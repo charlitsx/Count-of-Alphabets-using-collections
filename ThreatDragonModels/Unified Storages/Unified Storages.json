@@ -202,6 +202,21 @@
                   "severity": "Medium",
                   "description": "Tamper the communication between \nmanagement interface and storage array, and applications and Ethernet/Fiber Channel Fabric Switch",
                   "mitigation": "Configure secure protocols to connect to NetApp ONTAP server. For example SSH and HTTPS protocols\n\nConfigure secure protocols to connect to switches. \nFor example SSH and HTTPS protocols"
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Repudiation of physical access",
+                  "type": "Repudiation",
+                  "description": "Repudiation of physical access to servers, ethernet/fiber channel fabric switch, and storage array",
+                  "mitigation": "Record the access of any person to the Data Center. Also protect the access to the Data Center using magnetic cards, security access, access code"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Denial of service against the ethernet/fiber channel fabric switch, and storage array",
+                  "type": "Denial of service",
+                  "mitigation": "Harden the configuration of the systems\n\nApply patch management process at operating system and application levels\n\nMonitor the performance of CPU, memory, networking and hard disks of the devices"
                 }
               ],
               "attrs": {
@@ -223,7 +238,7 @@
                 "height": 80
               },
               "position": {
-                "x": 277,
+                "x": 278,
                 "y": 935
               },
               "angle": 0,
@@ -238,6 +253,13 @@
                   "type": "Tampering",
                   "description": "Tamper RAIDs and Hard Disks",
                   "mitigation": "Configure schedule automatic RAID-level scrubs on NetApp solution"
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "mitigation": "Do not keep default user, password, and configuration on the systems\n\nDeploy antimalware solution in the all end-points that are part of the network\n\nApply patch management process at operating system and application levels",
+                  "title": "Elevation of privileges in the data store",
+                  "type": "Elevation of privilege"
                 }
               ],
               "attrs": {
@@ -259,8 +281,8 @@
                 "height": 100
               },
               "position": {
-                "x": 531,
-                "y": 492
+                "x": 532,
+                "y": 490
               },
               "angle": 0,
               "id": "78411a7c-356b-4f65-bf14-f3de728343d8",
@@ -274,6 +296,29 @@
                   "type": "Spoofing",
                   "description": "Spoof the management interface of Ethernet/Fiber Channel Fabric Switch, the management interface of NetApp solution, or a software or application that requires access to NetApp solution",
                   "mitigation": "Configure the network devices to disallow traffic associated with IP address spoofing, ARP spoofing, DNS spoofing and DHCP spoofing\n\nSegment the internal network based on services, restricting the access to non-authorized people.\n\nConfigure Network Access Control solution to restrict the connection of non-authorized users and devices in the company’s network."
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Repudiation of changes",
+                  "type": "Repudiation",
+                  "description": "Repudiation of changes in applications, \nEthernet/fiber channel fabric switch, storage array and management interface",
+                  "mitigation": "Enable logs for the activities that are performed by the administrators"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Information disclosure using manager interface",
+                  "type": "Information disclosure",
+                  "description": "Information disclosure using the software, applications and manager interface",
+                  "mitigation": "Execute periodically vulnerability and ethical hacking assessment to those systems\n\nImplement antimalware protection on all the network"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "title": "Denial of service against the manager interface",
+                  "type": "Denial of service",
+                  "mitigation": "Harden the configuration of the operative system that serves the manager interface\n\nApply patch management process at operating system and application levels\n\nMonitor the performance of CPU, memory, networking and hard disks"
                 }
               ],
               "attrs": {
@@ -295,22 +340,55 @@
                 "height": 100
               },
               "position": {
-                "x": 298,
+                "x": 303,
                 "y": 733
               },
               "angle": 0,
               "id": "a3fd9a52-1c8d-4846-8f73-8840290687dc",
               "z": 10,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "mitigation": "Record the access of any person to the Data Center. Also protect the access to the Data Center using magnetic cards, security access, access code",
+                  "description": "Repudiation of physical access to servers, ethernet/fiber channel fabric switch, and storage array",
+                  "title": "Repudiation of physical access",
+                  "type": "Repudiation"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Denial of service against the ethernet/fiber channel fabric switch, and storage array",
+                  "type": "Denial of service",
+                  "description": "Denial of service against the ethernet/fiber channel fabric switch, and storage array",
+                  "mitigation": "Harden the configuration of the systems\n\nApply patch management process at operating system and application levels\n\nMonitor the performance of CPU, memory, networking and hard disks of the devices"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Denial of service against the data store",
+                  "type": "Denial of service",
+                  "mitigation": "Monitor the performance of the hard disks\n\nDeploy antimalware solution in the all end-points that are part of the network"
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Elevation of privileges in the manager interface",
+                  "type": "Elevation of privilege",
+                  "description": "",
+                  "mitigation": "Do not keep default user, password, and configuration on the systems\n\nDeploy antimalware solution in the all end-points that are part of the network\n\nApply patch management process at operating system and application levels"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Storage\nController"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -609,6 +687,10 @@
                 {
                   "x": 274,
                   "y": 702
+                },
+                {
+                  "x": 299,
+                  "y": 743
                 }
               ],
               "id": "3504f35a-71ab-4e94-b7c7-e7a7259b6956",
@@ -625,13 +707,23 @@
                 }
               ],
               "z": 21,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Information disclosure in the flow of data between management interface and storage array,  ethernet/fiber channel fabric switch and storage array, and applications and storage",
+                  "title": "Information disclosure in communications",
+                  "type": "Information disclosure",
+                  "mitigation": "Configure secure protocols for the transmission of sensible information such as login and configuration of the devices. Secure Protocols could be SSH, SSL, TLS, HTTPS.\n\nSegment the internal network based on services, restricting the access to non-authorized people.\n\nConfigure Network Access Control solution to restrict the connection of non-authorized users and devices in the company’s network."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -681,7 +773,12 @@
               "target": {
                 "id": "4170316c-3b0a-49ff-83ca-ecc3ab00fece"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 407,
+                  "y": 573
+                }
+              ],
               "id": "ccff6083-fde0-4509-aa04-4b7be687d8a1",
               "labels": [
                 {
@@ -699,13 +796,23 @@
                 }
               ],
               "z": 23,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Information disclosure in communications",
+                  "type": "Information disclosure",
+                  "description": "Information disclosure in the flow of data between management interface and storage array,  ethernet/fiber channel fabric switch and storage array, and applications and storage",
+                  "mitigation": "Configure secure protocols for the transmission of sensitive information such as login and configuration of the devices. Secure Protocols could be SSH, SSL, TLS, HTTPS.\n\nSegment the internal network based on services, restricting the access to non-authorized people.\n\nConfigure Network Access Control solution to restrict the connection of non-authorized users and devices in the company’s network."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -718,7 +825,12 @@
               "target": {
                 "id": "a3fd9a52-1c8d-4846-8f73-8840290687dc"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 427,
+                  "y": 643
+                }
+              ],
               "id": "c9cc13ea-387b-417d-8296-8821874cf30d",
               "labels": [
                 {
@@ -733,13 +845,23 @@
                 }
               ],
               "z": 24,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "mitigation": "Configure secure protocols for the transmission of sensitive information such as login and configuration of the devices. Secure Protocols could be SSH, SSL, TLS, HTTPS.\n\nSegment the internal network based on services, restricting the access to non-authorized people.\n\nConfigure Network Access Control solution to restrict the connection of non-authorized users and devices in the company’s network.",
+                  "description": "Information disclosure in the flow of data between management interface and storage array,  ethernet/fiber channel fabric switch and storage array, and applications and storage",
+                  "title": "Information disclosure in communications",
+                  "type": "Information disclosure"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -775,13 +897,23 @@
                 }
               ],
               "z": 25,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Information disclosure in the data storage, RAIDs and hard disks",
+                  "description": "Information disclosure in the data storage, RAIDs and hard disks",
+                  "type": "Information disclosure",
+                  "mitigation": "Protect the access to the Data Center using magnetic cards, security access, access code\n\nEncrypt sensible information in hard disks\n\nEncrypt sensible information that is stored in the backups\n\nWipe information of hard disks that are discarded"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -846,6 +978,14 @@
                   "type": "Tampering",
                   "description": "Tamper the process of authentication",
                   "mitigation": "Configure secure protocols for the process of authentication to the Authentication Server."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "title": "Repudiation in the process of authentication to management interface",
+                  "description": "Repudiation in the process of authentication to the management interface",
+                  "mitigation": "Enable successfully and failure logs for login logs in the Authentication Server.\n\nEnable successfully and failure for local login for in the NetApp ONTAP server.\n\nEnable successfully and failure for local login for in the ethernet/fiber channel fabric switch\n\nCentralize the logs in a Syslog Server"
                 }
               ],
               "attrs": {
