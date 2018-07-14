@@ -440,19 +440,14 @@
               "target": {
                 "id": "4170316c-3b0a-49ff-83ca-ecc3ab00fece"
               },
-              "vertices": [
-                {
-                  "x": 393,
-                  "y": 487
-                }
-              ],
+              "vertices": [],
               "id": "b2026ba7-60ed-4d57-b0e9-64909775c60e",
               "labels": [
                 {
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 16",
+                      "text": "Data Transfer",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -489,10 +484,13 @@
               "id": "e424a6e5-52cb-4928-baee-317a8e30ef7c",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.5210381392349128,
+                    "offset": -15.12656930508092
+                  },
                   "attrs": {
                     "text": {
-                      "text": "flow 17",
+                      "text": "Data Transfer",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -612,7 +610,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 19",
+                      "text": "Data Transfer",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -677,10 +675,13 @@
               "id": "ccff6083-fde0-4509-aa04-4b7be687d8a1",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.5457792030472981,
+                    "offset": 27.986344328150153
+                  },
                   "attrs": {
                     "text": {
-                      "text": "flow 21",
+                      "text": "Administration /\nOperation Tasks",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -714,7 +715,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 22",
+                      "text": "Administration /\nOperation Tasks",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -860,7 +861,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 26",
+                      "text": "Authentication",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -868,45 +869,6 @@
                 }
               ],
               "z": 28,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
-                },
-                ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Flow",
-              "smooth": true,
-              "source": {
-                "id": "78411a7c-356b-4f65-bf14-f3de728343d8"
-              },
-              "target": {
-                "id": "e98ebaca-6521-43f7-8f1d-f3499e7f6a11"
-              },
-              "vertices": [
-                {
-                  "x": 543,
-                  "y": 654
-                }
-              ],
-              "id": "f5232134-4174-4b7e-819b-a55a77f2dcab",
-              "labels": [
-                {
-                  "position": 0.5,
-                  "attrs": {
-                    "text": {
-                      "text": "flow 27",
-                      "font-weight": "400",
-                      "font-size": "small"
-                    }
-                  }
-                }
-              ],
-              "z": 29,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
