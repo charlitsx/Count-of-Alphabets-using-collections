@@ -529,7 +529,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 18",
+                      "text": "Administration /\nOperation Tasks",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -571,7 +571,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "flow 19",
+                      "text": "Administration /\nOperation Tasks",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -681,7 +681,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "Administration /\nOperation Tasks",
+                      "text": "Commands\nPerforming",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -715,7 +715,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Administration /\nOperation Tasks",
+                      "text": "Commands\nPerforming",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -912,6 +912,48 @@
                 }
               ],
               "z": 30,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "78411a7c-356b-4f65-bf14-f3de728343d8"
+              },
+              "target": {
+                "id": "e98ebaca-6521-43f7-8f1d-f3499e7f6a11"
+              },
+              "vertices": [
+                {
+                  "x": 542,
+                  "y": 622
+                }
+              ],
+              "id": "297b34b0-2257-4167-b5b7-6d07c3846c9f",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.4059556200578012,
+                    "offset": -14.048985797911882
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Authentication",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 31,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
