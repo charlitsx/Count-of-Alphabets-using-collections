@@ -72,22 +72,32 @@
                 "height": 80
               },
               "position": {
-                "x": 734,
+                "x": 732,
                 "y": 500
               },
               "angle": 0,
               "id": "40eef9ed-978e-4674-a9d8-0f3d1b3a5b02",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Spoof the administrator",
+                  "type": "Spoofing",
+                  "description": "Spoof the administrator account",
+                  "mitigation": "Educate administrators regarding common techniques that are used by attackers such as phishing, social engineering, shoulder surfing techniques\n\nThe AAA server must configure strong security policies for user and passwords such as:\n      * Unique user per administrator\n      * Complexity password requirement\n      * Password expiration\n      * Maximum number of failed attempts\n      * Maximum number of reuse passwords\n\nConfigure the password security parameters in NetApp ONTAP solution to protect the access bu the use of local accounts\n\nConfigure the password security parameters in the network devices."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Administrators /\nOperators"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -234,16 +244,26 @@
               "angle": 0,
               "id": "78411a7c-356b-4f65-bf14-f3de728343d8",
               "z": 9,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Spoof Management Interface",
+                  "type": "Spoofing",
+                  "description": "Spoof the management interface of Ethernet/Fiber Channel Fabric Switch, the management interface of NetApp solution, or a software or application that requires access to NetApp solution",
+                  "mitigation": "Configure the network devices to disallow traffic associated with IP address spoofing, ARP spoofing, DNS spoofing and DHCP spoofing\n\nSegment the internal network based on services, restricting the access to non-authorized people.\n\nConfigure Network Access Control solution to restrict the connection of non-authorized users and devices in the company’s network."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Manager\nInterface"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -796,16 +816,26 @@
               "angle": 0,
               "id": "e98ebaca-6521-43f7-8f1d-f3499e7f6a11",
               "z": 27,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Tamper the process of authentication",
+                  "type": "Tampering",
+                  "description": "Tamper the process of authentication",
+                  "mitigation": "Configure secure protocols for the process of authentication to the Authentication Server."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "AAA Service"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -904,6 +934,10 @@
                 {
                   "x": 542,
                   "y": 622
+                },
+                {
+                  "x": 555,
+                  "y": 660
                 }
               ],
               "id": "297b34b0-2257-4167-b5b7-6d07c3846c9f",
